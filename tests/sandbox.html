@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--html manifest="cache.manifest"-->
+<html>
+    <head>
+        <meta  name = "viewport">
+		<meta charset="utf-8"></meta>
+		<title>Sandbox</title>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/mootools/1.4.5/mootools-core-full-nocompat-yc.js" type="text/javascript"></script>
+		<script src="../dist/iara.min.js" type="text/javascript"></script>
+ 		<script>
+			iara({
+				contact: {
+					name: "Cárlisson Galdino",
+					mail: "mailto:arcano@angelfire.com"
+				},
+				name: "The IaraJS Project - Tests",
+				logo: "iaratests.png",
+				icon: "iaratests-icon.png"});
+			iara.addComponent(new iElement("Testando iElement"));
+			iara.addComponent(new iParagraph("Testando iParagraph"));
+			iara.addComponent(new iBlockQuote("Testando iBlockQuote"));
+			pre = new iFormatted("Testando");
+			pre.add("agora o");
+			pre.add("iFormated");
+			pre.click = function() {
+				pre.add("mais um!");
+				pre.refresh();
+			};
+			iara.addComponent(pre);
+			iara.addComponent(new iTitle("Testando iTitle"));
+			pan = new iPanel("Óia!");
+			pan.content = new iFormatted("novidade");
+			pan.add("hahaha");
+			pan.title.click = function() {
+				pan.add("Mais um item");
+				pan.refresh();
+			};
+			iara.addComponent(pan);
+			lnk = new iLink("UFAL", "http://www.ufal.br/", "Vamo lá");
+			iara.addComponent(lnk);
+			iara.addComponent(new iButton("Testando iButton"));
+			m = new iMenu("iMenu");
+			iara.addComponent(m);
+			l = new iList("impar");
+			l.add("Trisquel");
+			l.add("Debian");
+			l.add("Ubuntu");
+			l.add("Fedora");
+			l.add("OpenSuse");
+			iara.addComponent(l);
+			window.addEvent('domready', function(){
+				iara.show();
+			});
+		</script>
+   </head>
+    <body>
+		<p>Página feita com IaraJS.</p>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+{
+	"name": "iara",
+	"version": "2.0.01",
+	"description": "",
+	"homepage": "",
+	"keywords": [],
+	"mainteners": [{
+		"name": "Cárlisson Galdino",
+		"email": "bardo@carlissongaldino.com.br"
+	},
+	{
+		"name": "Evertton de Lima",
+		"email": "e.everttonlima@gmail.com"
+	}],
+	"bugs": {
+		"url": "https://github.com/carlisson/iarajs/issues"
+	},
+	"licenses": [{
+		"type": "",
+		"url": ""
+	}],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/carlisson/iarajs.js.git"
+	},
+	"github": "https://github.com/carlisson/iarajs",
+	"scripts": {
+		"test": "grunt test"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.0",
+		"grunt-jsonlint": "~1.0.0",
+		"grunt-contrib-concat": "~0.3.0",
+		"grunt-contrib-jshint": "~0.7.2",
+		"grunt-contrib-uglify": "~0.2.7"
+	}
+}

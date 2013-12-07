@@ -1,0 +1,13 @@
+{
+	"curly": true,
+	"indent": 2,
+	"immed": false,
+	"node": true,
+	"quotmark": "double",
+	"undef": true,
+	"unused": true,
+	"white": true,
+	"globals": {
+		"module": true
+	}
+}

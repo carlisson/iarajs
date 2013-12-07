@@ -1,4 +1,3 @@
-iarajs
-======
+# IaraJS
 
-A Framework for mobile app development in JavaScript
+A Framework for mobile app development in JavaScript.
